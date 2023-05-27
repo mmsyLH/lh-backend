@@ -30,4 +30,6 @@
         createTime,updateTime,isDelete,
         userRole,planetCode
     </sql>
+
+<!--    https://yupi.icu/-->
 </mapper>
