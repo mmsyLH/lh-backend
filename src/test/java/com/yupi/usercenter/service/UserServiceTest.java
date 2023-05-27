@@ -10,7 +10,8 @@ import javax.annotation.Resource;
 /**
  * 用户服务测试
  *
- * @author yupi
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 @SpringBootTest
 public class UserServiceTest {
@@ -18,6 +19,9 @@ public class UserServiceTest {
     @Resource
     private UserService userService;
 
+    /**
+     * 测试添加用户
+     */
     @Test
     public void testAddUser() {
         User user = new User();
@@ -33,6 +37,9 @@ public class UserServiceTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * 测试更新用户
+     */
     @Test
     public void testUpdateUser() {
         User user = new User();
@@ -48,18 +55,27 @@ public class UserServiceTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * 测试删除用户
+     */
     @Test
     public void testDeleteUser() {
         boolean result = userService.removeById(1L);
         Assertions.assertTrue(result);
     }
 
+    /**
+     * 测试获取用户
+     */
     @Test
     public void testGetUser() {
         User user = userService.getById(1L);
         Assertions.assertNotNull(user);
     }
 
+    /**
+     * 测试用户注册
+     */
     @Test
     void userRegister() {
         String userAccount = "yupi";

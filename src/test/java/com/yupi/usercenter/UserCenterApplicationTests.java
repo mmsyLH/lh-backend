@@ -9,12 +9,18 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * 启动类测试
+ *
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ */
 @SpringBootTest
 class UserCenterApplicationTests {
 
     @Test
     void testDigest() throws NoSuchAlgorithmException {
-        String newPassword= DigestUtils.md5DigestAsHex(("abcd" + "mypassword").getBytes());
+        String newPassword = DigestUtils.md5DigestAsHex(("abcd" + "mypassword").getBytes());
         System.out.println(newPassword);
     }
 

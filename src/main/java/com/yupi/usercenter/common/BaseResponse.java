@@ -7,18 +7,30 @@ import java.io.Serializable;
 /**
  * 通用返回类
  *
- * @param <T>
- * @author yupi
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 @Data
 public class BaseResponse<T> implements Serializable {
 
+    /**
+     * 状态码
+     */
     private int code;
 
+    /**
+     * 数据
+     */
     private T data;
 
+    /**
+     * 消息
+     */
     private String message;
 
+    /**
+     * 描述
+     */
     private String description;
 
     public BaseResponse(int code, T data, String message, String description) {

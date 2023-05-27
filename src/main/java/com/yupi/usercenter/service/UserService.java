@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 用户服务
  *
- * @author yupi
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 public interface UserService extends IService<User> {
 
@@ -18,7 +19,7 @@ public interface UserService extends IService<User> {
      * @param userAccount   用户账户
      * @param userPassword  用户密码
      * @param checkPassword 校验密码
-     * @param planetCode 星球编号
+     * @param planetCode    星球编号
      * @return 新用户 id
      */
     long userRegister(String userAccount, String userPassword, String checkPassword, String planetCode);
