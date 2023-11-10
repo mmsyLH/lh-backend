@@ -14,10 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.yupi.usercenter.mapper")
-public class UserCenterApplication {
+public class LhApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserCenterApplication.class, args);
+        SpringApplication.run(LhApplication.class, args);
     }
 
 }

@@ -3,13 +3,13 @@
 # @from <a href="https://yupi.icu">编程导航知识星球</a>
 spring:
   application:
-    name: user-center-backend
+    name: lh-backend
   # DataSource Config
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/yupi
+    url: jdbc:mysql://localhost:3306/find_friend
     username: root
-    password: 123456
+    password: root
   # session 失效时间
   session:
     timeout: 86400

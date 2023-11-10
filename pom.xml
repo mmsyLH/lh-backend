@@ -11,10 +11,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yupi</groupId>
-    <artifactId>user-center-backend</artifactId>
+    <artifactId>lh-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-center-backend</name>
-    <description>user-center-backend</description>
+    <name>lh-backend</name>
+    <description>lh-backend</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
